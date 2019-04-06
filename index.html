@@ -8,17 +8,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets\css\style.css">
-  <title>Crystals Collector Game</title>
+  <title>Crystal Collector Game</title>
 </head>
-<h1>Crystals Collection!</h1>
+<h1>Crystal Collection!</h1>
 
 <body>
-
+  <!-- rules pargraph -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-Rules">Game Rules</h1>
-      <p class="display-Rules">At the start of Crystal Collection game.  The computer will generate a random number.
-        By clicking on a crystal, you will find out what random number is assigned to each crystal. 
+      <h1 class="display-4">Game Rules</h1>
+      <p class="lead">At the start of Crystal Collection game. The computer will generate a random number.
+        By clicking on a crystal, you will find out what random number is assigned to each crystal.
         Use the crystal points to perfectly MATCH the Crystal Collection Number and You WIN!!!
         Go Over You LOSE.
         The value of each crystal is hidden from you until you click on it.
@@ -26,18 +26,20 @@
     </div>
   </div>
 
-  <div class="" style="width: 200px;">
-    <div class="rules">
-      <p class="rules"></p>
+  <!-- choose 4 cool images of crystals -->
+  <div class="container" class="crystals">
+    <div class="row">
+      <div class="col-xl"><img src="assets\images\ruby.png" class="img-thumbnail" alt="ruby"></div>
+      <div class="col-xl"><img src="assets\images\Emerald.png" class="img-thumbnail" alt="Emerald"></div>
+      <div class="col-xl"><img src="assets\images\orange sapphire.png" class="img-thumbnail" alt="Orange Sapphire"></div>
+      <div class="col-xl"><img src="assets\images\purple sapphire.png" class="img-thumbnail" alt="Purple Sapphire"></div>
     </div>
   </div>
-  <!-- choose 4 cool images of crystals -->
   <!-- press key to start -->
   <!-- display wins -->
   <button type="button" class="btn btn-Wins">Wins</button>
-  <button type="button" class="btn btn-Losses">Losses</button>
   <!-- display losses -->
- 
+  <button type="button" class="btn btn-Losses">Losses</button>
 
   <script type="text/javascript" src="assets\javascript\games.js"></script>
 </body>

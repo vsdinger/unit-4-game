@@ -1,3 +1,7 @@
+body {
+    background-image: ("assets\css\style.css\image background.png");
+   }
+
 // ToDo  display losses
 var losses = 0;
 // Todo display show wins
