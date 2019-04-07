@@ -9,9 +9,49 @@ body {
     background: url("../images/background.png"); 
    }
 
+   h1{
+    width: 500px;
+    height: 50px;
+    box-sizing: border-box;
+    font-style: Bold;
+   }
+
+   p{
+    width: auto;
+    height: 40px;
+    box-sizing: border-box;
+    font-style: Bold;
+   }
+
    .img-thumbnail{
     background: url("../images/background.png");
     width: 100px;
     height: 100px;
 
    }
+   .number-to-guess {
+    width: 150px;
+    height: 70px;
+    border: 3px solid purple;
+    
+  }
+  
+  .Your-Count {
+    width: 150px;
+    height: 70px;
+    border: 3px solid orangered;
+    float: center;
+  }
+  .Wins {
+    width: 150px;
+    height: 70px;
+    border: 3px solid purple;
+    float: right;
+    
+  }
+  
+  .Losses {
+    width: 150px;
+    height: 70px;
+    border: 3px solid orangered;
+  }
