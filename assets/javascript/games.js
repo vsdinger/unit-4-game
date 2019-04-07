@@ -1,6 +1,6 @@
-body {
-    background-image: ("assets\css\style.css\image background.png");
-   }
+$(document).ready(function() {
+
+
 
 // ToDo  display losses
 var losses = 0;
@@ -26,4 +26,4 @@ for (var i =0; i >4: i++)
 // function that if score equal the computer random # wins (score goes up)
 // function if the score does not equal the computer randon # Loss (score goes up)
 // restart game when win or loss happens...
-// 
+}
