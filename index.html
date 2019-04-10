@@ -24,36 +24,40 @@
         The value of each crystal is hidden from you until you click on it.
         These random values will change each game. Good Luck!.</p>
     </div>
-<div class="jumbotron jumbotron-fluid">
-  <!-- choose 4 cool images of crystals -->
-  <div class="col-md-6 text-center" id="buttonSection">
-    <div class="row">
-      <button id="button-1" value="0"><img src="assets\images\ruby.png" class="img-responsive icons" id="icon1"></button>
-      <button id="button-2" value="0"><img src="assets\images\Emerald.png" class="img-responsive icons" id="icon2"></button>
-      <button id="button-3" value="0"><img src="assets\images\orange sapphire.png" class="img-responsive icons" id="icon3"></button>
-      <button id="button-4" value="0"><img src="assets\images\purple sapphire.png" class="img-responsive icons" id="icon4"></button>
+    <!-- choose 4 cool images of crystals -->
+    <div class="col-md-6 text-center" id="buttonSection">
+      <div class="row">
+        <button id="button-1" value="0"><img src="assets\images\ruby.png" class="img-thumbnail"
+            class="img-responsive icons" id="icon1"></button>
+        <button id="button-2" value="0"><img src="assets\images\Emerald.png" class="img-thumbnail"
+            class="img-responsive icons" id="icon2"></button>
+        <button id="button-3" value="0"><img src="assets\images\orange sapphire.png" class="img-thumbnail"
+            class="img-responsive icons" id="icon3"></button>
+        <button id="button-4" value="0"><img src="assets\images\purple.png" class="img-thumbnail"
+            class="img-responsive icons" id="icon4"></button>
+      </div>
     </div>
-  </div>
-</div>
-  <div class="container" id="scores">
+
+    <div class="container" id="Numbers">
       <div class="row">
         <!-- display computer target score -->
         <Div>number-to-guess</Div>
-        <button type="button" id="btn btn numberto-guess"></button>
-        <!-- display wins -->
-        <Div>Wins</Div>
-        <button type="button" class="btn btn-Wins"></button>
+
         <!-- display Your total -->
         <Div>Your-Count</Div>
-        <button type="button" id="btn btn Your Count"></button>
-        <!-- display losses -->
-        <Div>Losses</Div>
-        <button type="button" class="btn btn-Losses"></button>
       </div>
     </div>
+    <div class="container" id="score">
+      <div class="row">
+        <!-- display wins -->
+        <Div>Wins</Div>
+
+        <!-- display losses -->
+        <Div>Losses</Div>
+      </div>
+    </div>
+
   </div>
-
-
 
   <script type="text/javascript" src="assets\javascript\games.js"></script>
 </body>

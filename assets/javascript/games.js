@@ -64,6 +64,58 @@ function crystalValues(arr) {
     c3 = arr[2];
     c4 = arr[3];
 }
+function gameReset(x){
+    crystalNumbers(random);
+    pickYourCount(crystals);
+    crystalValues(crystalNumber);
+    totalScore =0;
+    $("#totalNumber").html(totalScore);
+    alert(x);
+}
 
+pickYourCount(rand);
+pickRandomCrystals(crystals);
+crystalValues(crystalNumber);
 
+//crystal buttons
+$("button-1").on("click", function() {
+    totalScore += c1;
+    $("#totalNumber").html(yourCount);
 });
+
+$("button-2").on("click", function() {
+    totalScore += c2;
+    $("#totalNumber").html(yourCount);
+});
+
+$("button-3").on("click", function() {
+    totalScore += c3;
+    $("#totalNumber").html(yourCount);
+});
+
+$("button-4").on("click", function() {
+    totalScore += c4;
+    $("#totalNumber").html(yourCount);
+});
+
+//wins
+$("button").on("click", function() {
+if (totalScore == numbertoguess) {
+    wins++;
+    console.log(totalScore);
+    $("#totalNumber").html(yourCount);
+    $("#wins").html("Wins:" +wins);
+
+    setTimeout(function() {gameReset("You Lose")}, 200);
+}
+
+else if (totalScore > yourCount) {
+    losses++;
+    $("#totalNumber").html(totalScore);
+    $("#losses").html("Losses: " + losses);
+
+    setTimeout(function() {gameReset("You Need more practice-You Lost!!")}, 200);
+}
+});
+
+});  //end of script
